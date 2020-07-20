@@ -39,5 +39,5 @@ export const useDebounced: UseDebounced = (initialState, delay: number) => {
     }, delay)
   }
 
-  return [state.current, debouncedState.current, setState, setDebouncedState]
+  return [state.current, debouncedState.current as any, setState, setDebouncedState]
 }
