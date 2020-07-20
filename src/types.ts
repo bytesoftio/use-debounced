@@ -1,1 +1,3 @@
-export type UseDebounced = <T = any>(initialState: T, delay: number) => [T, T, (newState: T) => void, (newState: T) => void]
+export type StateUpdater<TState> = (newState: TState) => void
+export type DebouncedStateUpdater<TState> = (newState: TState) => void
+export type UseDebounced = <TState = any>(initialState: TState, delay: number) => [TState, TState, StateUpdater<TState>, DebouncedStateUpdater<TState>]
