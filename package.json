@@ -25,6 +25,7 @@
   },
   "devDependencies": {
     "@bytesoftio/docster": "^1.0.0",
+    "@bytesoftio/helpers-promises": "^1.0.6",
     "@types/enzyme": "^3.10.5",
     "@types/jest": "^25.1.4",
     "@types/node": "^13.9.1",
